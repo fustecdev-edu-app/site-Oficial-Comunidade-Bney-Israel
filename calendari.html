@@ -6,9 +6,41 @@
     <link rel="stylesheet" href="calendario.css">
     <title>Calendario biblíco</title>
 </head>
-<body>
-    <img class="imgcal" src="" ><br>
-    <button class="diabtn">Proximo</button>
+<body> 
+    <marquee behavior="" direction="">Calendario de acordo com a biblía </marquee>
+    <br>
+    <div align="center">
+        <img class="imgcal" src="" ><br>
+       <li>Calendario Biblíco</li>
+    <p class="mostra"></p>
+    <br>
+    <li>Calendario gregoriano</li><br>
+    <p class="gre"></p>
+
+    </div>
+    <br>
+    <p class="barra"></p>
+    <br>
+    <div align="center">
+        <h3>Pesquisar datas do gregoriano para o Biblíco!</h3>
+        <br>
+        Dia  <input class="pesqdia" type="number" ><br><br>
+        Mês  <input class="pesqmes" type="number" ><br><br>
+        Ano  <input class="pesqano" type="number" ><br><br><br>
+        <button class="diabtn">Pesquisa</button>
+        
+
+    </div>
+    <p class="barra"></p><br>
+    <div align="center">
+        <h3>Data gregoriano</h3>
+        <p class="p1gre"></p>
+        <h3>Data Biblíco</h3>
+        <p class="p1biblico"></p>
+
+        <h3 class="idadebiblica"></h3>
+
+    </div>
 
     <script type="module" src="calendario.js"></script>
 </body>

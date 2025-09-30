@@ -5,3 +5,29 @@ body{
     height: 180px;
     width: 180px;
 }
+marquee{
+    background-color: brown;
+    color: gold;
+    font-size: 25px;
+}
+.barra{
+    background-color: brown;
+    width: 100%;
+    height: 5px;
+}
+.diabtn{
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.p1gre{
+    color: brown;
+}
+.p1biblico{
+    color: black;
+}
+.idadebiblica{
+    background-color: brown;
+    color: gold;
+}
