@@ -40,10 +40,11 @@ var d = dat.getDate();
 var m = dat.getMonth();
 var ano = dat.getFullYear();
 
-m=m+1
+
 
 var pes  = ano*365
 pes = pes+ parseInt(ordmes[m+1]) 
+m=m+1
 pes=pes+ parseInt(d)
 gre.textContent="total de dias      "+pes +"   dia "+d+"  / mês "+m+" / ano "+ano
 
