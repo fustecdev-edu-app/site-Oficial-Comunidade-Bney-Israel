@@ -8,8 +8,13 @@ var dias = image;
 var cont =1 
 
 pass.addEventListener("click", () =>{
+    if (cont>=30) {
+       cont=1 
+      
+    }
     img.src= image[cont];
     console.log(cont)
     cont++
+
 })
 
