@@ -76,7 +76,7 @@ var parasha=[
    /**/"³² E o sacerdote, que for ungido, e que for sagrado, para administrar o sacerdócio, no lugar de seu pai, fará a expiação, havendo vestido as vestes de linho, as vestes santas; ",
    /**/"³³ Assim fará expiação pelo santo santuário; também fará expiação pela tenda da congregação e pelo altar; semelhantemente fará expiação pelos sacerdotes e por todo o povo da congregação. ",
    /**/"³⁴ E isto vos será por estatuto perpétuo, para fazer expiação pelos filhos de Israel de todos os seus pecados, uma vez no ano. E fez Arão como o Senhor ordenara a Moisés. ",
-   /**/"",
+   /**/"**********************************************************************",
    /**/"",
    /**/"",
    /**/"",
