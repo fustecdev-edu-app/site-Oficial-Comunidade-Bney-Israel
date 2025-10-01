@@ -17,3 +17,14 @@ optio.addEventListener("mouseleave",() =>{
     optio.style.display="none"
 })
 
+const array = parasha;
+var cont = 0
+
+array.map((index) =>{
+    var p = document.createElement("p")
+    p.textContent= parasha[cont]
+
+    document.body.appendChild(p)
+    cont++
+
+})
