@@ -142,7 +142,7 @@ var parasha29=[
    /**/"",
 
 ];
-var  audio = "https://s.bibliaonline.com.br/audio/play/1/acf/Lev/16/_/azure/en-US-OnyxTurboMultilingualNeural/audio.mp3"
+let  audio = "https://s.bibliaonline.com.br/audio/play/1/acf/Lev/16/_/azure/en-US-OnyxTurboMultilingualNeural/audio.mp3"
 
 
 export {dia};
