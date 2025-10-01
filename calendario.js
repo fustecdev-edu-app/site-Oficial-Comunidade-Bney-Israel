@@ -1,4 +1,7 @@
 import { image } from "./imagem.js";
+import { festa } from "./featas.js";
+import { status } from "./featas.js";
+
 
 
 
@@ -47,6 +50,9 @@ pes = pes+ parseInt(ordmes[m+1])
 m=m+1
 pes=pes+ parseInt(d)
 gre.textContent="total de dias      "+pes +"   dia "+d+"  / mês "+m+" / ano "+ano
+
+document.querySelector(".solenidades").style.display=status
+document.querySelector(".titlefesta").textContent=festa[d]
 
 while(dias<=pes){
   anB = parseInt(pes/360) 
