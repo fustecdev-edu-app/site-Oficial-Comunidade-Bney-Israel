@@ -46,20 +46,13 @@ const festa = [
 
 var status = "none"
 
-if (d = 1) {
-    if (hor >17) {
-       status="block"
-       
-        
-    }
-    
-}else if (d = 2) {
+ if (d = 2) {
 
-    if (hor < 17) {
-       status="block"
+    if (hor > 17) {
+       status="none"
         
     }else{
-        status="none"
+        status="block"
     }
     
 };
