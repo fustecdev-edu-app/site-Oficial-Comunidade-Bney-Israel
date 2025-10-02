@@ -51,7 +51,7 @@ var status = "none"
 
     if (hor >= 17) {
        status="none";
-      alert('none')
+      
         
     }
     
