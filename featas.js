@@ -44,88 +44,89 @@ const festa = [
 
 ]
 
+
 var status = "none"
 
- if (d = 2) {
+ if (d == 2) {
 
-    if (hor > 17) {
-       status="none"
+    if (hor >= 17) {
+       status="none";
+      alert('none')
         
-    }else{
-        status="block"
     }
     
 };
 
-if (d = 4) {
-    if (hor >17) {
-       status="block"
+if (d == 4) {
+     
+    if (hor >=17) {
+       status="block";
        
         
     }
     
-}else if (d = 5) {
+}else if (d == 5) {
 
-    if (hor < 17) {
-       status="block"
+    if (hor <= 17) {
+       status="block";
         
     }else{
-        status="none"
+        status="none";
     }
     
 };
 
-if (d = 6) {
-    if (hor >17) {
-       status="block"
+if (d == 6) {
+    if (hor >=17) {
+       status="block";
        
         
     }
     
-}else if (d = 13) {
+}else if (d == 13) {
 
-    if (hor < 17) {
-       status="block"
+    if (hor <= 17) {
+       status="block";
         
     }else{
-        status="none"
+        status="none";
     }
     
 };
 
 
-if (d = 18) {
-    if (hor >17) {
-       status="block"
+if (d == 18) {
+    if (hor >=17) {
+       status="block";
        
         
     }
     
-}else if (d = 19) {
+}else if (d == 19) {
 
-    if (hor < 17) {
-       status="block"
+    if (hor <= 17) {
+       status="block";
         
     }else{
-        status="none"
+        status="none";
     }
     
 };
 
-if (d = 25) {
-    if (hor >17) {
-       status="block"
+if (d == 25) {
+    if (hor >=17) {
+       status="block";
        
         
     }
     
-}else if (d = 26) {
+}else if (d == 26) {
 
-    if (hor < 17) {
-       status="block"
+    if (hor <= 17) {
+       status="block";
         
     }else{
-        status="none"
+        status="none";
     }
     
 };
