@@ -57,7 +57,7 @@ var status = "none"
     
 };
 
-if (d == 4) {
+if (d == 3) {
      
     if (hor >=17) {
        status="block";
@@ -65,7 +65,7 @@ if (d == 4) {
         
     }
     
-}else if (d == 5) {
+}else if (d == 4) {
 
     if (hor <= 17) {
        status="block";
