@@ -40,7 +40,7 @@ var audios=[
 ]
 
 var parasha=[
-   "Você e nosso convidado hoje as 13 hrs na comunidade B`ney Isra`el",
+   "",
    "***************************************************************************************",
    /**/"Deuteronômio 31",
    /**/"¹ Depois foi Moisés, e falou estas palavras a todo o Israel, ",
