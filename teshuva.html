@@ -19,12 +19,25 @@
         li{
             font-size: 18px;
         }
+        .post{
+            display: none;
+        }
+        a{
+            cursor: pointer;
+        }
+        a:hover{
+            color: red;
+        }
+        .ifram{
+            display: none;
+        }
     </style>
 </head>
 <body>
     <br>
     <marquee behavior="" direction="">Comunidade &nbsp;&nbsp;B`ney Isra`el</marquee>
     <br>
+    <div class="contaner">
     <h1 align="center">🕊 O que segnifica fazer Teshuvá!</h1>
     <br>
     <p>Teshuvá (תשובה) é uma palavra hebraica que significa literalmente “retorno” ou “resposta”.</p>
@@ -70,10 +83,45 @@
         <li>👉 Um detalhe bonito: os sábios dizem que quando alguém faz teshuvá por amor ao Eterno (e não apenas por medo de punição)</li>
         <li>até os pecados do passado são transformados em méritos, porque se tornam parte do caminho que levou ao retorno.</li>
     </ul>
+    <br><br><br>
+   
+    <a class="pdf" style="font-size: 20px;">   👉  &nbsp;&nbsp;&nbsp;Estudo completo soubre Teshuvá</a>
+
+</div>
+     <div class="ifram">
+    <iframe class="post" src="" width="1020" height="900"></iframe><input class="volt" type="button" value="Voltar">
+</div>
 
 
 
 
     <br><br><br>
+    <script>
+        var divifram = document.querySelector(".ifram")
+        var pdf = document.querySelector(".pdf")
+        var post = document.querySelector(".post")
+        var contaner = document.querySelector(".contaner")
+        var volt = document.querySelector(".volt")
+
+
+
+        pdf.addEventListener("click", () =>{
+            contaner.style.display="none"
+            divifram.style.display="block"
+            post.src="תשובה TESHUVÁ.pdf"
+            post.style.display="block"
+
+        })
+
+        volt.addEventListener("click", () =>{
+            contaner.style.display="block"
+            divifram.style.display="none"
+            post.src=""
+            post.style.display="none"
+
+        })
+
+
+    </script>
 </body>
 </html>
