@@ -76,7 +76,7 @@ if (d == 3) {
     
 };
 
-if (d == 6) {
+if (d == 7) {
     if (hor >=17) {
        status="block";
        
