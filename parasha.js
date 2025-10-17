@@ -145,11 +145,11 @@ var parasha16=[
    /**/"",
 
 ];
-var parasha18=[
+var parasha17=[
    /**/"PARASHÁ 1",
    /**/"*************************************************************************************",
    /**/"ESCRITOS NAZARENOS",
-   /**/"Dia 18 Mês 10",
+   /**/"Dia 17 Mês 10",
    /**/"MATEUS CAPÍTULO 1 V 1 ATE 17 ",
    /**/"¹ Livro da geração de Jesus Cristo, filho de Davi, filho de Abraão. ",
    /**/"² Abraão gerou a Isaque; e Isaque gerou a Jacó; e Jacó gerou a Judá e a seus irmãos; ",
@@ -169,15 +169,51 @@ var parasha18=[
    /**/"¹⁶ E Jacó gerou a José, marido de Maria, da qual nasceu JESUS, que se chama o Cristo. ",
    /**/"¹⁷ De sorte que todas as gerações, desde Abraão até Davi, são catorze gerações; e desde Davi até a deportação para a Babilônia, catorze gerações; e desde a deportação para a Babilônia até Cristo, catorze gerações. ",
    /**/"*************************************************************************************",
-   /**/"MATEUS",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
+   /**/"MATEUS CAPÍTULO 19 V 3 ATE 9",
+   /**/"³ Então chegaram a ele os fariseus, tentando-o, e dizendo-lhe: É lícito ao homem repudiar sua mulher por qualquer motivo? ",
+   /**/"⁴ Ele, porém, respondendo, disse-lhes: Não tendes lido que aquele que os fez no princípio macho e fêmea os fez, ",
+   /**/"⁵ E disse: Portanto, deixará o homem pai e mãe, e se unirá à sua mulher, e serão os dois em uma carne? ",
+   /**/"⁶ Assim não são mais dois, mas uma só carne. Portanto, o que Deus ajuntou não o separe o homem. ",
+   /**/"⁷ Disseram-lhe eles: Então, por que mandou Moisés dar-lhe carta de divórcio, e repudiá-la? ",
+   /**/"⁸ Disse-lhes ele: Moisés, por causa da dureza dos vossos corações, vos permitiu repudiar vossas mulheres; mas ao princípio não foi assim. ",
+   /**/"⁹ Eu vos digo, porém, que qualquer que repudiar sua mulher, não sendo por causa de fornicação, e casar com outra, comete adultério; e o que casar com a repudiada também comete adultério. ",
+     /**/"*************************************************************************************",
+   /**/"MARCOS CAPÍTULO 10 V 1 ATE 12",
+   /**/"¹ E, levantando-se dali, foi para os termos da Judeia, além do Jordão, e a multidão outra vez se reuniu em torno dele; e tornou a ensiná-los, como tinha por costume. ",
+   /**/"² E, aproximando-se dele os fariseus, perguntaram-lhe, tentando-o: É lícito ao homem repudiar sua mulher? ",
+   /**/"³ Mas ele, respondendo, disse-lhes: Que vos mandou Moisés? ",
+   /**/"⁴ E eles disseram: Moisés permitiu escrever carta de divórcio e repudiar. ",
+   /**/"⁵ E Jesus, respondendo, disse-lhes: Pela dureza dos vossos corações vos deixou ele escrito esse mandamento; ",
+   /**/"⁶ Porém, desde o princípio da criação, Deus os fez macho e fêmea. ",
+   /**/"⁷ Por isso deixará o homem a seu pai e a sua mãe, e unir-se-á a sua mulher, ",
+   /**/"⁸ E serão os dois uma carne; e assim já não serão dois, mas uma carne. ",
+   /**/"⁹ Portanto, o que Deus ajuntou não o separe o homem. ",
+   /**/"¹⁰ E em casa tornaram os discípulos a interrogá-lo acerca disto mesmo. ",
+   /**/"¹¹ E ele lhes disse: Qualquer que deixar a sua mulher e casar com outra, adultera contra ela. ",
+   /**/"¹² E, se a mulher deixar a seu marido, e casar com outro, adultera. ",
+   /**/"*************************************************************************************",
+   /**/"LUCAS 3 V 23 ATE 28",
+   /**/"²³ E este mesmo Jesus estava como que começando os trinta anos, sendo (como se cuidava) filho de José, e José de Heli, ",
+   /**/"²⁴ E Heli de Matã, e Matã de Levi, e Levi de Melqui, e Melqui de Janai, e Janai de José, ",
+   /**/"²⁵ E José de Matatias, e Matatias de Amós, e Amós de Naum, e Naum de Esli, e Esli de Nagaí, ",
+   /**/"²⁶ E Nagaí de Máate, e Máate de Matatias, e Matatias de Semei, e Semei de José, e José de Jodá, ",
+   /**/"²⁷ E Jodá de Joanã, e Joanã de Resá, e Resá de Zorobabel, e Zorobabel de Salatiel, e Salatiel de Neri, ",
+   /**/"²⁸ E Neri de Melqui, e Melqui de Adi, e Adi de Cosã, e Cosã de Elmadã, e Elmadã de Er, ",
+    /**/"*************************************************************************************",
+   /**/"APOCALIPSE 21 V 1 ATE 5",
+   /**/"¹ E vi um novo céu, e uma nova terra. Porque já o primeiro céu e a primeira terra passaram, e o mar já não existe. ",
+   /**/"² E eu, João, vi a santa cidade, a nova Jerusalém, que de Deus descia do céu, preparada como uma esposa adornada para o seu marido. ",
+   /**/"³ E ouvi uma grande voz do céu, que dizia: Eis aqui o tabernáculo de Deus está com os homens, pois com eles habitará, e eles serão o seu povo, e o mesmo Deus estará com eles, e será o seu Deus. ",
+   /**/"⁴ E Deus limpará de seus olhos toda a lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor; porque já as primeiras coisas são passadas. ",
+   /**/"⁵ E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas. E disse-me: Escreve; porque estas palavras são verdadeiras e fiéis. ",
+    /**/"*************************************************************************************",
+   /**/"APOCALIPSE 22 V 1 ATE 5",
+   /**/"¹ E mostrou-me o rio puro da água da vida, claro como cristal, que procedia do trono de Deus e do Cordeiro. ",
+   /**/"² No meio da sua praça, e de um e de outro lado do rio, estava a árvore da vida, que produz doze frutos, dando seu fruto de mês em mês; e as folhas da árvore são para a saúde das nações. ",
+   /**/"³ E ali nunca mais haverá maldição contra alguém; e nela estará o trono de Deus e do Cordeiro, e os seus servos o servirão. ",
+   /**/"⁴ E verão o seu rosto, e nas suas testas estará o seu nome. ",
+   /**/"⁵ E ali não haverá mais noite, e não necessitarão de lâmpada nem de luz do sol, porque o Senhor Deus os ilumina; e reinarão para todo o sempre. ",
+  /**/"*************************************************************************************", 
    /**/"",
    /**/"",
    /**/"",
@@ -252,15 +288,38 @@ var parasha29=[
 
 ];
 
+var shabbat =[
+    /**/"PARASHÁ 1",
+   /**/"*************************************************************************************",
+   /**/"SHABBAT SHALOM",
+   /**/"Hoje Reunião na Comunidade B`ney Isra`el as 13 Hrs",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+   /**/"",
+]
+
 var parasha=[]
 var audio =[]
 
-if (dia== 15) {
-   parasha=parasha15
+if (dia== 17) {
+   parasha=parasha17
    audio= audios[dia]
 }
-if (dia== 16) {
-   parasha=parasha16
+if (dia== 18) {
+   parasha=shabbat
    audio= audios[dia]
 }
 
