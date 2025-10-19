@@ -14,7 +14,7 @@
             font-size: 25px;
         }
         iframe{
-            width: 320px;
+            width: 340px;
             height: 600px;
         }
     </style>
@@ -26,9 +26,7 @@
     <div class="selexao">
       <select name="selexao" class="select">
         <option value="0">Pesquisa</option>
-        <option value="1">teste</option>
-        <option value="2">Comunidade B'nei Israel.pdf</option>
-        <option value="3">תשובה TESHUVÁ.pdf</option>
+       
       </select>&nbsp;&nbsp;<input type="button" class="iputbtn" value="Pesquisar">
     </div>
     <br><br>
@@ -41,19 +39,38 @@
         let valorSelecionado = ""
         let array = [
             "",
-            "",
             "Comunidade B'nei Israel.pdf",
             "תשובה TESHUVÁ.pdf",
+            "O_verdadeiro_ensino_de_Jesus_e_Paulo.pdf",
+            "Introdução Gálatas pt 2.pdf",
+            "Gálatas cap_1 PDF.pdf",
+            "galatas cap 2 - O Evangelho da liberdade.pdf",
         ]
+    
+        var posi = 0
+        let creatOpit = array.map(function(item){
+            posi++
+          let optio = document.createElement("option")
+          optio.value = posi;
+          optio.text = array[posi]
+         
+
+          selec.appendChild(optio)
+
+
+        })
 
         btn.addEventListener("click", () =>{
             valorSelecionado =  selec.options[selec.selectedIndex].value;
+              iframe.src=array[valorSelecionado]
+              /*
             if (valorSelecionado == 2) {
                 iframe.src=array[valorSelecionado]
             }
             if (valorSelecionado == 3) {
                 iframe.src=array[valorSelecionado]
             }
+                */
          
         })
        
