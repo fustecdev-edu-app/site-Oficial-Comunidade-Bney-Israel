@@ -49,11 +49,11 @@
     
         var posi = 0
         let creatOpit = array.map(function(item){
-            posi++
+            
           let optio = document.createElement("option")
           optio.value = posi;
           optio.text = array[posi]
-         
+          posi++
 
           selec.appendChild(optio)
 
