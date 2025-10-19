@@ -37,7 +37,13 @@
       </select>&nbsp;&nbsp;<input type="button" class="iputbtn" value="Pesquisar">
     </div>
     <br><br>
-    <iframe src="" class="iframe" frameborder="0"></iframe>
+    <iframe
+    class="iframe"
+  src=""
+  style="width:100%; height:600px;"
+  frameborder="0"
+></iframe>
+
 </body>
     <script>
         const selec = document.querySelector(".select")
@@ -53,13 +59,22 @@
             "https://fustecdev-edu-app.github.io/pdf/galatas-cap-2-O-Evangelho-da-liberdade.pdf",
             "https://fustecdev-edu-app.github.io/pdf/תשובה-TESHUVA.pdf",
         ]
+        let arrayNome = [
+            "",
+            "Comunidade-Bnei-Israel.pdf",
+            "Galatas cap-1.pdf",
+            "Introducao-Galatas-pt-2.pdf",
+            "O_verdadeiro_ensino_de_Jesus_e_Paulo.pdf",
+            "galatas-cap-2-O-Evangelho-da-liberdade.pdf",
+            "תשובה-TESHUVA.pdf",
+        ]
     
         var posi = 0
         let creatOpit = array.map(function(item){
             
           let optio = document.createElement("option")
           optio.value = posi;
-          optio.text = array[posi]
+          optio.text = arrayNome[posi]
           posi++
 
           selec.appendChild(optio)
@@ -70,14 +85,7 @@
         btn.addEventListener("click", () =>{
             valorSelecionado =  selec.options[selec.selectedIndex].value;
               iframe.src=array[valorSelecionado]
-              /*
-            if (valorSelecionado == 2) {
-                iframe.src=array[valorSelecionado]
-            }
-            if (valorSelecionado == 3) {
-                iframe.src=array[valorSelecionado]
-            }
-                */
+            
          
         })
        
