@@ -1,9 +1,44 @@
 const selec = document.querySelector(".select");
-    const btn = document.querySelector(".iputbtn");
+    const btn = document.querySelector(".iputbtn1");
+    const btn2 = document.querySelector(".iputbtn2");
+    const btnLerPDF = document.querySelector(".btnlerPdf")
+    const lerPDF = document.querySelector(".lerPDF")
+    const selexao = document.querySelector(".selexao")
+    const BaixarPDF = document.querySelector(".btnBaixarPdf")
+    const telabaixarpdf = document.querySelector(".BaixaPdf")
+    const Opcao = document.querySelector(".Opcao")
+    const iframe = document.querySelector(".iframe") 
     const pdfContainer = document.getElementById("pdf-container");
     const controls = document.getElementById("controls");
     const canvas = document.getElementById("pdf-render");
     const ctx = canvas.getContext("2d");
+
+
+    // btn ler pdf abre a janela de le PDF***
+
+    btnLerPDF.addEventListener("click", () =>{
+      Opcao.style.display="none"
+      lerPDF.style.display="block"
+      selexao.style.display="block"
+      btn.style.display="block"
+     
+      
+    })
+
+    BaixarPDF.addEventListener("click", () => {
+      Opcao.style.display="none"
+      selexao.style.display="block"
+      telabaixarpdf.style.display="block"
+       btn2.style.display="block"
+      
+
+    })
+
+
+
+
+
+
 
     let pdfDoc = null,
         pageNum = 1,
@@ -105,3 +140,31 @@ const selec = document.querySelector(".select");
         renderPage(pageNum);
       });
     });
+
+    let array = [ "",
+     "https://fustecdev-edu-app.github.io/pdf/Comunidade-Bnei-Israel.pdf", 
+     "https://fustecdev-edu-app.github.io/pdf/Galatas cap-1.pdf",
+      "https://fustecdev-edu-app.github.io/pdf/Introducao-Galatas-pt-2.pdf",
+       "https://fustecdev-edu-app.github.io/pdf/O_verdadeiro_ensino_de_Jesus_e_Paulo.pdf",
+        "https://fustecdev-edu-app.github.io/pdf/galatas-cap-2-O-Evangelho-da-liberdade.pdf",
+         "https://fustecdev-edu-app.github.io/pdf/תשובה-TESHUVA.pdf", ] 
+
+         let arrayNome = [ "", "Comunidade-Bnei-Israel.pdf",
+             "Galatas cap-1.pdf", "Introducao-Galatas-pt-2.pdf", 
+             "O_verdadeiro_ensino_de_Jesus_e_Paulo.pdf", 
+             "galatas-cap-2-O-Evangelho-da-liberdade.pdf",
+              "תשובה-TESHUVA.pdf", ] 
+              var posi = 0
+         let creatOpit = array.map(function(item){
+             let optio = document.createElement("option")
+              optio.value = posi; optio.text = arrayNome[posi] 
+              posi++ 
+              selec.appendChild(optio) })
+               btn2.addEventListener("click", () =>{ 
+                valorSelecionado = selec.options[selec.selectedIndex].value; 
+                iframe.src=array[valorSelecionado] 
+            });
+
+      function sair() {
+         window.location.reload(true)
+      }      

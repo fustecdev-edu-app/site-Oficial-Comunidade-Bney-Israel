@@ -81,6 +81,23 @@
     .iframe{
         width:350px; height:90vh;
     }
+    .BaixaPdf{
+        display: none;
+    }
+    .selexao{
+        display: none;
+    }
+    .iputbtn1{
+        display: none;
+        margin-left: 40%;
+     margin-top: 8px;
+    }
+    .iputbtn2{
+     display: none;
+     margin-left: 40%;
+     margin-top: 8px;
+      
+    }
 
 
 
@@ -88,17 +105,24 @@
 </head>
 <body>
   <marquee>Comunidade B'ney Isra'el</marquee>
-
+   <br><br>
+   <div class="Opcao" align="center">
+    <input class="btnlerPdf" type="button" value="Ler PDF">&nbsp;&nbsp;<input class="btnBaixarPdf" type="button" value="Baixar PDF">
+   </div>
   <div class="selexao">
     <select class="select">
       <option value="0">Selecione um PDF</option>
     </select>
-    &nbsp;&nbsp;
-    <input type="button" class="iputbtn" value="Pesquisar">
+   <br>
+    <input type="button" class="iputbtn1" value="Pesquisar" align="center">
+    <input type="button" class="iputbtn2" value="Pesquisar" align="center">
   </div>
-
+   
   <div class="BaixaPdf">
-    <iframe class="iframe" src="https://fustecdev-edu-app.github.io/pdf/Comunidade-Bnei-Israel.pdf" frameborder="0"></iframe>
+    <iframe class="iframe" src="" frameborder="0"></iframe>
+    <br>
+    <button onclick="sair()">Sair</button>
+    
   </div>
     
 
@@ -112,6 +136,7 @@
   <div id="pdf-container">
     <canvas id="pdf-render"></canvas>
   </div>
+   <button onclick="sair()">Sair</button>
   </div>
   <script src="vepdf.js"></script>
 </body>
