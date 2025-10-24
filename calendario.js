@@ -1,6 +1,44 @@
-import { image } from "./imagem.js";
+
 import { festa } from "./featas.js";
 import { status } from "./featas.js";
+
+
+var image = [
+    "",
+    "https://fustecdev-edu-app.github.io/imagem/dia1.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia2.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia3.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia4.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia5.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia6.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia7.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia8.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia9.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia10.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia11.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia12.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia13.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia14.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia15.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia16.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia17.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia18.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia19.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia20.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia21.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia22.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia23.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia24.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia25.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia26.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia27.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia28.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia29.jpg",
+    "https://fustecdev-edu-app.github.io/imagem/dia30.jpg",
+    
+            
+    
+]
 
 
 
