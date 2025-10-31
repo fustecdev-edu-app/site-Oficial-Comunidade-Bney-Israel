@@ -1,0 +1,247 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: gold;
+}
+.quem-somos{
+
+  display: none;
+
+}
+#estudos{
+
+  display: none;
+}
+#verdade-escrituras{
+   display: none;
+
+}
+#contato{
+  display: none;
+  margin-left: 5%;
+}
+
+.head{
+  margin-top: -10px;
+  background-color: brown;
+  height: 100px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.Opcao input {
+  margin: 5px;
+}
+
+.lerPDF,
+.BaixaPdf {
+  display: none;
+  margin-top: 20px;
+}
+
+.iframe {
+  width: 100%;
+  height: 500px;
+}
+
+#controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+canvas {
+  width: 100%;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+#verdade-escrituras {
+  background-color: #fff8dc;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+#verdade-escrituras h2 {
+  color: #4b2e83;
+  text-align: center;
+}
+
+#verdade-escrituras .versiculos blockquote {
+  font-style: italic;
+  border-left: 4px solid #4b2e83;
+  padding-left: 10px;
+  margin: 10px 0;
+  color: #333;
+}
+
+#verdade-escrituras button.btnFechar {
+  display: block;
+  margin: 20px auto 0;
+  padding: 8px 16px;
+  background-color: brown;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#parasha-diaria {
+  background: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 900px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+#parasha-diaria h2 {
+  color: #4b2e83;
+  margin-bottom: 10px;
+}
+
+#parasha-diaria p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+#btnEstudoParasha {
+  background: #4b2e83;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btnEstudoParasha:hover {
+  background: #371f5d;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  color: aqua;
+}
+
+.rool {
+  
+  justify-content: center;
+  /* Centraliza horizontalmente */
+  align-items: center;
+  /* Centraliza verticalmente */
+  width: 320px;
+  height: 500px;
+  /* Defina uma altura fixa */
+  overflow-y: scroll;
+  /* Adiciona uma barra de rolagem vertical se o conteúdo exceder a altura */
+  /* Ou use overflow-x: scroll; para rolagem horizontal */
+  background-color: rgb(187, 181, 181);
+  margin-left: 35%;
+
+
+}
+
+.tpoo {
+ position: absolute;
+  display: flex;
+ margin-top: -10px;
+ 
+  height: 50px;
+  width: 320px;
+  /* Opcional: para ocupar a largura total */
+  z-index: 1000;
+  /* Opcional: para garantir que fique acima de outros elementos */
+  overflow-y: hidden;
+  /* Estilização para o contêiner */
+  background-color: cadetblue;
+  overflow-x: scroll;
+  /* para rolagem horizontal */
+  white-space: nowrap;
+  /* Impede a quebra de linha do conteúdo */
+  overflow-x: auto;
+  /* Esconde a barra de rolagem vertical */
+
+}
+
+a {
+  cursor: pointer;
+  margin-top: 3px;
+  padding: 2px;
+  font-size: 25px;
+   text-decoration: underline;
+}
+
+a:hover {
+  color: gold;
+}
+.pai{
+  width: 300px;
+  height: 450px;
+  text-align: left;
+  margin-top: 50px;
+  
+}
+.cabeca{
+   position: absolute;
+  display: flex;
+ margin-top: -10px;
+ margin-left: 50%;
+  height: 50px;
+  width: 270px;
+  /* Opcional: para ocupar a largura total */
+  z-index: 1000;
+  /* Opcional: para garantir que fique acima de outros elementos */
+  overflow-y: hidden;
+  /* Estilização para o contêiner */
+
+  overflow-x: scroll;
+  /* para rolagem horizontal */
+  white-space: nowrap;
+  /* Impede a quebra de linha do conteúdo */
+  overflow-x: auto;
+  /* Esconde a barra de rolagem vertical */
+
+}
+
+
+
+
+
+@media (max-width: 300px) {
+ .cabeca{
+  position: absolute;
+  margin-left: 20%;
+  width: 170px;
+
+ }
+ .semanaparasha{
+  margin-top:  5800px;
+ }
+
+}
+@media (max-width: 350px) {
+ .cabeca{
+   position: absolute;
+  margin-left: 20%;
+  width: 170px;
+  
+ }
+}
