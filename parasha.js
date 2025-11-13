@@ -114,36 +114,18 @@ var dia =  data.getDate();
 54 Vezot Haberachá (33:1–34:12)
  */
 
-var parasha20=[
-   /**/"PARASHÁ 2",
-   /**/"Dia 20/10/2025 ",
-   /**/"GENESIS 6 V 9 ATE 22",
-   /**/"⁹ Estas são as gerações de Noé. Noé era homem justo e perfeito em suas gerações; Noé andava com Deus. ",
-   /**/"¹⁰ E gerou Noé três filhos: Sem, Cão e Jafé. ",
-   /**/"¹¹ A terra, porém, estava corrompida diante da face de Deus; e encheu-se a terra de violência. ",
-   /**/"¹² E viu Deus a terra, e eis que estava corrompida; porque toda a carne havia corrompido o seu caminho sobre a terra. ",
-   /**/"¹³ Então disse Deus a Noé: O fim de toda a carne é vindo perante a minha face; porque a terra está cheia de violência; e eis que os desfarei com a terra. ",
-   /**/"¹⁴ Faze para ti uma arca da madeira de gofer; farás compartimentos na arca e a betumarás por dentro e por fora com betume. ",
-   /**/"¹⁵ E desta maneira a farás: De trezentos côvados o comprimento da arca, e de cinquenta côvados a sua largura, e de trinta côvados a sua altura. ",
-   /**/"¹⁶ Farás na arca uma janela, e de um côvado a acabarás em cima; e a porta da arca porás ao seu lado; far-lhe-ás andares, baixo, segundo e terceiro. ",
-   /**/"¹⁷ Porque eis que eu trago um dilúvio de águas sobre a terra, para desfazer toda a carne em que há espírito de vida debaixo dos céus; tudo o que há na terra expirará. ",
-   /**/"¹⁸ Mas contigo estabelecerei a minha aliança; e entrarás na arca, tu e os teus filhos, tua mulher e as mulheres de teus filhos contigo. ",
-   /**/"¹⁹ E de tudo o que vive, de toda a carne, dois de cada espécie, farás entrar na arca, para os conservar vivos contigo; macho e fêmea serão. ",
-   /**/"²⁰ Das aves conforme a sua espécie, e dos animais conforme a sua espécie, de todo o réptil da terra conforme a sua espécie, dois de cada espécie virão a ti, para os conservar em vida. ",
-   /**/"²¹ E leva contigo de toda a comida que se come e ajunta-a para ti; e te será para mantimento, a ti e a eles. ",
-   /**/"²² Assim fez Noé; conforme a tudo o que Deus lhe mandou, assim o fez. ",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
+var parasha5=[
+   /**/"PARASHÁ 5",
+   /**/"CHAYEI SARA",
+   /**/"VIDA DE SARA ",
+   /**/" Gn 23.1-25.18 ",
+   /**/"Haftarah ",
+   /**/"1Rs 1.1-31 ",
+   /**/"Brit Chadashá ",
+   /**/"1Co 15.50-57 ",
+   /**/"Tehilim",
+   /**/"45",
+   /**/"De:09/11/2025 á 14/11/2025",
    /**/"",
    /**/"",
    /**/"",
@@ -225,34 +207,18 @@ var shabbat =[
    /**/"*************************************************************************************",
    /**/"SHABBAT SHALOM",
    /**/"Hoje Reunião na Comunidade B`ney Isra`el as 13 Hrs",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
-   /**/"",
+
 ]
 
 var parasha=[]
 
 
-if (dia== 20) {
-   parasha=parasha20
-   audio= audios[dia]
+if (dia<= 15) {
+  parasha=parasha5 
+
 }
 if (dia== 18) {
-   parasha=shabbat
-   audio= audios[dia]
+  
 }
 
 

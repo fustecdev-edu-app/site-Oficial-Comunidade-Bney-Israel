@@ -1,6 +1,6 @@
 
 
-
+import { parasha } from "./parasha.js";
 import { VamosMorarNoCeu } from "./even.js";
 
 
@@ -248,8 +248,12 @@ pdfNomes.forEach((nome, index) => {
 
   document.getElementById("parasha").innerHTML = `
       <h2>📖 Parashá da Semana</h2>
-      <p><b>${parashaItem.title}</b> (${parashaItem.hebrew || ''})</p>
-      <p><i>${traducao}</i></p>
+      <p><b>${parasha[0]}</b> (${parasha[1]})</p>
+      <p><b>${parasha[2]}</b> (${parasha[3]})</p>
+      <p><b>${parasha[4]}</b> (${parasha[5]})</p>
+      <p><b>${parasha[6]}</b> (${parasha[7]})</p>
+      <p><b>${parasha[8]}</b> (${parasha[9]})</p>
+      
       
     `;
 
