@@ -10,7 +10,7 @@ const Ainicio = document.querySelector(".Ainicio")
 
 
 var dat = new Date()
-var dia = dat.getUTCDay()
+var dia = dat.getDate()
 
 
 
@@ -244,149 +244,10 @@ pdfNomes.forEach((nome, index) => {
 
 
 
-
-const parashaTraducoes = {
-  "Bereshit": "No Princípio (Gênesis 1:1–6:8)",
-  "Noach": "Noé (Gênesis 6:9–11:32)",
-  "Lech-Lecha": "Vai-te (Gênesis 12:1–17:27)",
-  "Vayera": "E apareceu (Gênesis 18:1–22:24)",
-  "Chayei Sarah": "A vida de Sara (Gênesis 23:1–25:18)",
-  "Toldot": "Gerações (Gênesis 25:19–28:9)",
-  "Vayetze": "E saiu (Gênesis 28:10–32:3)",
-  "Vayishlach": "E enviou (Gênesis 32:4–36:43)",
-  "Vayeshev": "E habitou (Gênesis 37:1–40:23)",
-  "Miketz": "No fim (Gênesis 41:1–44:17)",
-  "Vayigash": "E aproximou-se (Gênesis 44:18–47:27)",
-  "Vayechi": "E viveu (Gênesis 47:28–50:26)",
-  "Shemot": "Nomes (Êxodo 1:1–6:1)",
-  "Vaera": "E apareceu (Êxodo 6:2–9:35)",
-  "Bo": "Vem (Êxodo 10:1–13:16)",
-  "Beshalach": "Quando enviou (Êxodo 13:17–17:16)",
-  "Yitro": "Jetro (Êxodo 18:1–20:23)",
-  "Mishpatim": "Ordenanças (Êxodo 21:1–24:18)",
-  "Terumah": "Oferta (Êxodo 25:1–27:19)",
-  "Tetzaveh": "Ordenarás (Êxodo 27:20–30:10)",
-  "Ki Tisa": "Quando levantares (Êxodo 30:11–34:35)",
-  "Vayakhel": "E reuniu (Êxodo 35:1–38:20)",
-  "Pekudei": "Contas (Êxodo 38:21–40:38)",
-  "Vayikra": "E chamou (Levítico 1:1–5:26)",
-  "Tzav": "Ordena (Levítico 6:1–8:36)",
-  "Shemini": "O oitavo dia (Levítico 9:1–11:47)",
-  "Tazria": "Quando conceber (Levítico 12:1–13:59)",
-  "Metzora": "O leproso (Levítico 14:1–15:33)",
-  "Acharei Mot": "Depois da morte (Levítico 16:1–18:30)",
-  "Kedoshim": "Santos (Levítico 19:1–20:27)",
-  "Emor": "Dize (Levítico 21:1–24:23)",
-  "Behar": "No monte (Levítico 25:1–26:2)",
-  "Bechukotai": "Nos meus estatutos (Levítico 26:3–27:34)",
-  "Bamidbar": "No deserto (Números 1:1–4:20)",
-  "Nasso": "Levanta (Números 4:21–7:89)",
-  "Behaalotecha": "Quando acenderes (Números 8:1–12:16)",
-  "Shelach": "Envia (Números 13:1–15:41)",
-  "Korach": "Corá (Números 16:1–18:32)",
-  "Chukat": "Estatuto (Números 19:1–22:1)",
-  "Balak": "Balaque (Números 22:2–25:9)",
-  "Pinchas": "Finéias (Números 25:10–30:1)",
-  "Matot": "Tribos (Números 30:2–32:42)",
-  "Masei": "Jornadas (Números 33:1–36:13)",
-  "Devarim": "Palavras (Deuteronômio 1:1–3:22)",
-  "Vaetchanan": "Suplicou (Deuteronômio 3:23–7:11)",
-  "Eikev": "Consequência (Deuteronômio 7:12–11:25)",
-  "Reeh": "Vê (Deuteronômio 11:26–16:17)",
-  "Shoftim": "Juízes (Deuteronômio 16:18–21:9)",
-  "Ki Tetze": "Quando saíres (Deuteronômio 21:10–25:19)",
-  "Ki Tavo": "Quando entrares (Deuteronômio 26:1–29:8)",
-  "Nitzavim": "Estais de pé (Deuteronômio 29:9–30:20)",
-  "Vayelech": "E foi (Deuteronômio 31:1–31:30)",
-  "Haazinu": "Dá ouvidos (Deuteronômio 32:1–32:52)",
-  "Vezot Haberachah": "Esta é a bênção (Deuteronômio 33:1–34:12)"
-};
-
-/* Normaliza strings: remove 'Parashat', parênteses, hífens => espaços, trim, lower */
-function normalize(s) {
-  return s
-    .replace(/Parashat\s+/i, '')      // remove "Parashat "
-    .replace(/[()]/g, '')             // remove parênteses
-    .replace(/[-–—]/g, ' ')           // hífens viram espaço
-    .replace(/[\/,;]+/g, ' / ')       // separadores ficam padronizados
-    .replace(/\s+/g, ' ')             // espaços múltiplos -> 1
-    .trim()
-    .toLowerCase();
-}
-
-/* monta mapa normalizado das traduções para busca eficiente */
-const normalizedMap = {};
-for (const key of Object.keys(parashaTraducoes)) {
-  normalizedMap[normalize(key)] = parashaTraducoes[key];
-}
-
-/* tenta traduzir títulos compostos */
-function traduzirTitulo(rawTitle) {
-  if (!rawTitle) return null;
-  const clean = normalize(rawTitle);
-  // split por " / " (caso de Matot / Masei ou "Matot-Masei")
-  const parts = clean.split(/\s*\/\s*|\s+and\s+|\s*&\s+/);
-  const translatedParts = parts.map(part => {
-    // tentar direto
-    if (normalizedMap[part]) return normalizedMap[part];
-    // tentar capitalizar palavras para comparar com chaves originais (fallback)
-    const candidate = part.split(' ').map(w => w[0]?.toUpperCase() + w.slice(1)).join(' ');
-    if (parashaTraducoes[candidate]) return parashaTraducoes[candidate];
-    // se não encontrou, tentar versão sem espaços (pouco provável) ou retornar null
-    return null;
-  });
-
-  // junte apenas as que foram traduzidas
-  const found = translatedParts.filter(Boolean);
-  if (found.length) return found.join(' / ');
-  return null;
-}
-
-async function mostrarParasha() {
-  try {
-    const res = await fetch("https://www.hebcal.com/shabbat?cfg=json&geonameid=3470127");
-    const data = await res.json();
-
-    console.log("DEBUG: itens retornados:", data.items); // <-- se algo der errado, veja aqui
-
-    const parashaItem = data.items.find(i => i.category === "parashat" || i.slug === "parashat");
-    const titleRaw = parashaItem ? (parashaItem.title || parashaItem.hebrew || "") : null;
-
-    if (!parashaItem) {
-      document.getElementById("parasha").innerText = "Nenhuma Parashá encontrada para esta semana.";
-      return;
-    }
-
-    const traducao = traduzirTitulo(titleRaw) || "Tradução não disponível";
-
-    document.getElementById("parasha").innerHTML = `
+  document.getElementById("parasha").innerHTML = `
       <h2>📖 Parashá da Semana</h2>
       <p><b>${parashaItem.title}</b> (${parashaItem.hebrew || ''})</p>
       <p><i>${traducao}</i></p>
       
     `;
-  } catch (err) {
-    console.error("Erro ao buscar Parashá:", err);
-    document.getElementById("parasha").innerText = "Erro ao buscar Parashá (veja console).";
-  }
-}
-
-mostrarParasha();
-var cont = 0
-const rool = document.querySelector(".pai")
-document.querySelector(".a1").addEventListener("click", () => {
-
-  VamosMorarNoCeu.map((indice) => {
-
-    var filho = document.createElement('p');
-    filho.textContent = VamosMorarNoCeu[cont];
-
-    rool.appendChild(filho);
-    cont++
-
-  })
-
-})
-
-
 
