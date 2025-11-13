@@ -256,4 +256,5 @@ pdfNomes.forEach((nome, index) => {
       
       
     `;
+    console.log(parasha)
 
